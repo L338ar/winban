@@ -42,21 +42,21 @@ Changing the logging level from INFO to DEBUG will result much more data that us
 For trapping custom events, please see next section about CONFIG.INI
 ## CONFIG.INI syntax
 
-CONFIG.INI holds all the rules for trapping attacks. It basically tells the script what event to listen to and how to extract needed data (such as the IP address).
+CONFIG.INI holds all the rules for trapping attacks. It basically tells the script what event to listen to and how to extract needed data (such as the IP address) from it.
 
 Each section begins with the rule name between [...] and must have the following fields:
 |Field name|Description|
 |---|---|
-|eventfilter|holds two segments, divided by PIPE (\|). First segment is the event log to listen to (Application/Security, etc). The second segment is the full query for the events.|
-|ip|Also divided by a pipe, this field tells the script from where to extract the IP address, beginning the search with the first fields and ending with the second. The script tries to find the IP address between those to segments.|
+|eventfilter|holds two segments, divided by PIPE (\|). First segment is the event log to listen to (Application/Security/etc). The second segment is the full query for the events.|
+|ip|Also divided by a pipe, this field tells the script from where to extract the IP address, beginning the search with the first field and ending with the second. The script tries to find the IP address between those two segments.|
 
 Additionally, you can add the following fields:
 |Field name|Description|
 |---|---|
-|info|Same syntax as the ip fields, the script can cut a part of the even and show it in the log. This can be anything and only effects the log|
-|detector|Additional keyword to filter the events in case the query is not detailed enough.|
+|info|Same syntax as the ip field, the script can cut a part of the event and show it in the log. This can be anything and only effects the printer output|
+|detector|Additional keyword to filter the events in case the query is not detailed enough. The event will only trigger if the keyword is present in the event|
 
-The default config.ini file comes with 3 services (well, 4 if you count the one for internal tests). Both RDP and OpenSSH use all the fields so feel free to learn from them.
+The default config.ini file comes with 3 services (well, 4 if you count the one for internal tests). Both RDP and OpenSSH use all the fields so feel free to learn from it.
 
 ## License
 
