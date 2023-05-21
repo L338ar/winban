@@ -5,7 +5,7 @@ A python script to protect Windows system from brut-force attacks by blocking IP
 
 Originally  written as a quick RDP brute-force preventor, it is now a full Events->Firewall engine in the same spirit as [Fail2Ban](https://github.com/fail2ban/fail2ban)
 ## Warning
-Please review the actual Python script before deploying in production. What works on my test machines may not work at your. Like any other security system, you should run tests and verity it works!
+Please review the actual Python script before deploying in production. What works on my test machines may not work at yours. Like any other security system, you should run tests and verity it works!
 ## Installation
 
 The script depends on two non built-in modules that needs to be installed:
