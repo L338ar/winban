@@ -53,8 +53,8 @@ Each section begins with the rule name between [...] and must have the following
 Additionally, you can add the following fields:
 |Field name|Description|
 |---|---|
-|info|Same syntax as the ip field, the script can cut a part of the event and show it in the log. This can be anything and only effects the printer output|
-|detector|Additional keyword to filter the events in case the query is not detailed enough. The event will only trigger if the keyword is present in the event|
+|info|Same syntax as the ip field, the script can cut a part of the event and show it in the log. This can be anything and only effects the printed output.|
+|detector|Additional keyword to filter the events in case the query is not detailed enough. The event will only trigger if the keyword is present.|
 
 The default config.ini file comes with 3 services (well, 4 if you count the one for internal tests). Both RDP and OpenSSH use all the fields so feel free to learn from it.
 
@@ -66,6 +66,7 @@ The default config.ini file comes with 3 services (well, 4 if you count the one 
 ## Contributing
 
 Contributions are always welcome!
+If you added a service to the config.ini file please share so others can enjoy as well.
 
 ## Author
 
