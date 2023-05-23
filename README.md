@@ -58,7 +58,7 @@ Additionally, you can add the following fields:
 
 The default config.ini file comes with 3 services (well, 4 if you count the one for internal tests). Both RDP and OpenSSH use all the fields so feel free to learn from it.
 
-##Clean-up
+## Clean-up
 
 The script was designed to reset all changes to the host when exiting. While the script runs it creates/use a firewall rule named "RDP-BF-GUARD<n>" (this can be changed via the rule_name variable). If the script is closed unexpectedly, manually removing the rule will restore the system to regular functionality (and vulnerability).
 
